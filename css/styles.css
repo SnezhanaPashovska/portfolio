@@ -42,10 +42,10 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb: 230, 184, 199; /* Muted Rose Pink):*/
+  --bs-primary-rgb:154, 105, 120; /* Muted Rose Pink):*/
   --bs-secondary-rgb: 253, 247, 242; /* Soft Blush Pink */
   --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb: 194, 183, 233; /* Dusty Lavender */
+  --bs-info-rgb:195, 181, 189; /* Dusty Lavender */
   --bs-warning-rgb: 74, 74, 74; /* Elegant Charcoal Gray */
   --bs-danger-rgb: 220, 53, 69;
   --bs-light-rgb: 253, 247, 242;
@@ -2970,8 +2970,8 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #B889A4;
-  --bs-btn-border-color: #B889A4;
+  --bs-btn-bg: #936B82;
+  --bs-btn-border-color: #936B82;
   --bs-btn-hover-color: #fff;
   --bs-btn-hover-bg: #9C5A75;
   --bs-btn-hover-border-color: #9C5A75;
@@ -2992,13 +2992,13 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   --bs-btn-color: #fff; /* White text for better contrast */
-  --bs-btn-bg: #725bb2; /* Modern muted purple */
-  --bs-btn-border-color: #725bb2; /* Border matches background */
+  --bs-btn-bg: #7A5068 ; /* Modern muted purple */
+  --bs-btn-border-color: #7A5068; /* Border matches background */
 
   /* Hover State */
   --bs-btn-hover-color: #fff; /* White text */
-  --bs-btn-hover-bg: #ff7855; /* Warm coral */
-  --bs-btn-hover-border-color: #ff7855;
+  --bs-btn-hover-bg: rgb(154, 105, 120); /* Warm coral */
+  --bs-btn-hover-border-color:rgb(154, 105, 120);
 
   /* Focus State */
   --bs-btn-focus-shadow-rgb: 253, 218, 236; /* Soft pink glow */
@@ -11386,7 +11386,7 @@ footer.footer .social-link:hover {
       rgba(255, 255, 255, 0.1) 0%,
       rgba(255, 255, 255, 0.1) 100%
     ),
-    url("../assets/img/pawel-czerwinski-GFqo8rVmH30-unsplash.jpg");
+    url("../assets/img/f9e8d36c-92bf-42b5-a477-364709574fed.jpg");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
