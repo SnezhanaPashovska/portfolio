@@ -43,109 +43,39 @@
 
     <!-- Project Detail Section -->
     <div class="container mt-5">
-      <div class="row">
-        <!-- Main Project Image -->
-        <div class="col-md-6">
-          <img
-            src="assets/project-image.jpg"
-            alt="Project Image"
-            class="img-fluid rounded"
-            id="main-image"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-          />
-        </div>
-
-        <!-- Project Information -->
-        <div class="col-md-6">
-          <h1>Project Title</h1>
-          <p class="text-muted">Published on: October 2023</p>
-          <p>
-            This section provides details about the project. You can explain the
-            goals, features, and outcomes. Feel free to add more descriptions,
-            images, or even videos.
-          </p>
-
-          <!-- Project Meta Information -->
-          <ul class="list-group mb-4">
-            <li class="list-group-item">
-              <strong>Category:</strong> Web Development
-            </li>
-            <li class="list-group-item"><strong>Status:</strong> Completed</li>
-            <li class="list-group-item">
-              <strong>Client:</strong> BeWize Association
-            </li>
-            <li class="list-group-item">
-              <strong>Technologies used:</strong> BeWize Association
-            </li>
-          </ul>
-
-          <!-- Call to Action Button -->
-          <a href="index.html" class="btn btn-primary">Back to Projects</a>
-        </div>
+      <div id="project-container" class="row">
+        <!-- Dynamic Content will be inserted here -->
       </div>
+    </div>
 
-      <!-- Optional Photos (Small, but clickable) -->
-      <div class="row mt-4">
-        <div class="col-4">
-          <img
-            src="assets/small-image1.jpg"
-            alt="Small Image 1"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image1.jpg"
-          />
-        </div>
-        <div class="col-4">
-          <img
-            src="assets/small-image2.jpg"
-            alt="Small Image 2"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image2.jpg"
-          />
-        </div>
-        <div class="col-4">
-          <img
-            src="assets/small-image3.jpg"
-            alt="Small Image 3"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image3.jpg"
-          />
-        </div>
-        <div class="col-4">
-          <img
-            src="assets/small-image4.jpg"
-            alt="Small Image 4"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image4.jpg"
-          />
-        </div>
-        <div class="col-4">
-          <img
-            src="assets/small-image5.jpg"
-            alt="Small Image 5"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image5.jpg"
-          />
-        </div>
-        <div class="col-4">
-          <img
-            src="assets/small-image5.jpg"
-            alt="Small Image 6"
-            class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
-            data-bs-img="assets/small-image5.jpg"
-          />
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="imageModal"
+      tabindex="-1"
+      aria-labelledby="imageModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="imageModalLabel">Image Preview</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <!-- Modal Body -->
+          <div class="modal-body">
+            <img
+              id="modal-image"
+              src=""
+              alt="Image Preview"
+              class="img-fluid"
+            />
+          </div>
         </div>
       </div>
     </div>
@@ -157,34 +87,8 @@
       </div>
     </footer>
 
-    <!-- Image Modal for Viewing Larger Images -->
-    <div
-      class="modal fade"
-      id="imageModal"
-      tabindex="-1"
-      aria-labelledby="imageModalLabel"
-      aria-hidden="true"
-    >
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="imageModalLabel">Project Image</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="modal"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="modal-body">
-            <img src="" id="modal-image" class="img-fluid" alt="Large Image" />
-          </div>
-        </div>
-      </div>
-    </div>
-
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-
+    <script src="js/project-detail.js"></script>
   </body>
 </html>
