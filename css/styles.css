@@ -11236,8 +11236,8 @@ html {
   height: 100%;
   transition: all 0.4s ease 0s;
   transform: translateX(250px);
-  background: rgb(230, 184, 199);
-  border-left: 1px solid rgba(230, 184, 199, 0.1);
+  background: rgb(154, 105, 120);
+  border-left: 1px solid rgba(154, 105, 120, 0.1);
   color: #7D7D7D;
 }
 
@@ -11253,7 +11253,7 @@ html {
 .sidebar-nav li.sidebar-nav-item a {
   display: block;
   text-decoration: none;
-  color: #4A4A4A;
+  color: #fff;
   padding: 15px;
 }
 
@@ -11474,7 +11474,7 @@ footer.footer .social-link:hover {
     clip-path: inset(2rem);
   }
   .portfolio-item:hover .caption {
-    background-color: rgba(194, 183, 233, 0.9);
+    background-color: rgba(195, 181, 189, 0.9);
     -webkit-clip-path: inset(2rem);
     clip-path: inset(2rem);
   }
@@ -11494,9 +11494,10 @@ footer.footer .social-link:hover {
 .page-header {
   background: linear-gradient(
     to right,
-    rgba(194, 183, 233, 1),
-    rgba(230, 184, 199, 1),
+    rgba(154, 105, 120, 1),
+    rgba(195, 181, 189, 1),
     rgba(253, 247, 242, 1)
+    
   );
 
   color: white;
