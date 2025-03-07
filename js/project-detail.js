@@ -1,40 +1,38 @@
 document.addEventListener("DOMContentLoaded", function () {
-  const imageElements = document.querySelectorAll("[data-bs-img]");
+  const imageModal = document.getElementById("imageModal");
   const modalImage = document.getElementById("modal-image");
 
-  
-  if (modalImage) {
-   
-    imageElements.forEach((element) => {
-      element.addEventListener("click", (event) => {
-        const imageSrc = event.target.getAttribute("data-bs-img");
-        console.log("Image clicked:", imageSrc); 
-        if (imageSrc) {
-          modalImage.src = imageSrc; 
-        }
-
-        // Show the modal
-        const modal = new bootstrap.Modal(
-          document.getElementById("imageModal")
-        );
-        modal.show();
-      });
-    });
-
-    
-    const mainImage = document.getElementById("main-image");
-    if (mainImage) {
-      mainImage.addEventListener("click", () => {
-        modalImage.src = mainImage.src; // Set the modal image to the main image
-        const modal = new bootstrap.Modal(
-          document.getElementById("imageModal")
-        );
-        modal.show(); // Show the modal
-      });
-    }
-  } else {
-    console.error("Modal image element not found");
+  if (!imageModal || !modalImage) {
+    console.error("Modal or modal image element not found.");
+    return;
   }
+
+  // Create Bootstrap modal instance
+  const modal = new bootstrap.Modal(imageModal);
+
+  // Function to open modal and set image
+  function openImageModal(imageSrc) {
+    if (imageSrc) {
+      modalImage.src = imageSrc;
+      imageModal.removeAttribute("inert"); // Ensure accessibility
+      modal.show();
+    } else {
+      console.error("Image source is empty.");
+    }
+  }
+
+  // Handle image clicks for additional images
+  document.addEventListener("click", function (event) {
+    const target = event.target;
+
+    if (target.matches("[data-bs-img]")) {
+      openImageModal(target.getAttribute("data-bs-img"));
+    }
+
+    if (target.id === "main-image") {
+      openImageModal(target.src);
+    }
+  });
 
   // Project data and rendering
   const projects = {
@@ -61,50 +59,43 @@ document.addEventListener("DOMContentLoaded", function () {
   // Get the project ID from URL
   const urlParams = new URLSearchParams(window.location.search);
   const projectId = urlParams.get("id");
-
-  if (!projectId) {
-    console.error("No project ID found in the URL");
+  if (!projectId || !projects[projectId]) {
+    document.getElementById("project-container").innerHTML = `
+      <h2>Project not found!</h2>
+      <a href="index.html" class="btn btn-secondary">Back to Projects</a>
+    `;
+    return;
   }
 
-  console.log("Project ID:", projectId);
-
-  // Find the container
-  const container = document.getElementById("project-container");
   const project = projects[projectId];
+  const container = document.getElementById("project-container");
 
-  if (project) {
-    // Populate the main project details
-    container.innerHTML = `
-      <!-- Main Project Image -->
-      <div class="col-md-6">
-        <img
-          src="${project.image}"
-          alt="${project.title}"
-          class="img-fluid rounded"
-          id="main-image"
-          data-bs-toggle="modal"
-          data-bs-target="#imageModal"
-        />
-      </div>
+  // Populate project details
+  container.innerHTML = `
+    <div class="col-md-6">
+      <img
+        src="${project.image}"
+        alt="${project.title}"
+        class="img-fluid rounded"
+        id="main-image"
+      />
+    </div>
 
-      <!-- Project Information -->
-      <div class="col-md-6">
-        <h1>${project.title}</h1>
-        <p class="text-muted">Published on: ${project.date}</p>
-        <p>${project.description}</p>
+    <div class="col-md-6">
+      <h1>${project.title}</h1>
+      <p class="text-muted">Published on: ${project.date}</p>
+      <p>${project.description}</p>
+      <ul class="list-group mb-4">
+        <li class="list-group-item"><strong>Status:</strong> ${project.status}</li>
+        <li class="list-group-item"><strong>Tech Stack:</strong> ${project.techStack}</li>
+        <li class="list-group-item"><strong>Project Type:</strong> ${project.projectType}</li>
+      </ul>
+      <a href="index.html" class="btn btn-primary">Back to Projects</a>
+    </div>
+  `;
 
-        <!-- Project Meta Information -->
-        <ul class="list-group mb-4">
-          <li class="list-group-item"><strong>Status:</strong> ${project.status}</li>
-          <li class="list-group-item"><strong>Tech Stack:</strong> ${project.techStack}</li>
-          <li class="list-group-item"><strong>Project Type:</strong> ${project.projectType}</li>
-        </ul>
-
-        <a href="index.html" class="btn btn-primary">Back to Projects</a>
-      </div>
-    `;
-
-    // Add the optional photos dynamically
+  // Add additional photos
+  if (project.photos.length) {
     const photoContainer = document.createElement("div");
     photoContainer.className = "row mt-4";
 
@@ -115,8 +106,6 @@ document.addEventListener("DOMContentLoaded", function () {
             src="${photo}"
             alt="Additional Image"
             class="img-fluid rounded"
-            data-bs-toggle="modal"
-            data-bs-target="#imageModal"
             data-bs-img="${photo}"
           />
         </div>
@@ -124,10 +113,5 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
     container.appendChild(photoContainer);
-  } else {
-    container.innerHTML = `
-      <h2>Project not found!</h2>
-      <a href="index.html" class="btn btn-secondary">Back to Projects</a>
-    `;
   }
 });
