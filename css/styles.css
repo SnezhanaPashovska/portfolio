@@ -635,7 +635,9 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto;
+  max-height: 650px;
+  object-fit: cover;
+  border: 1px solid red;
 }
 
 .img-thumbnail {
@@ -11419,6 +11421,7 @@ footer.footer .social-link:hover {
   overflow: hidden;
   max-width: 530px;
   margin: auto auto 1rem;
+  
 }
 .portfolio-item .caption {
   display: flex;

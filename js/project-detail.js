@@ -45,6 +45,7 @@ document.addEventListener("DOMContentLoaded", function () {
       techStack: "Symfony, PHP",
       projectType: "Full-stack",
       image: "assets/img/bg-callout.jpg",
+      link: "https://github.com/SnezhanaPashovska/tasklinker",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
@@ -86,9 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
       <p class="text-muted">Published on: ${project.date}</p>
       <p>${project.description}</p>
       <ul class="list-group mb-4">
-        <li class="list-group-item"><strong>Status:</strong> ${project.status}</li>
-        <li class="list-group-item"><strong>Tech Stack:</strong> ${project.techStack}</li>
-        <li class="list-group-item"><strong>Project Type:</strong> ${project.projectType}</li>
+        <li class="list-group-item"><strong>Status : </strong> ${project.status}</li>
+        <li class="list-group-item"><strong>Tech Stack : </strong> ${project.techStack}</li>
+        <li class="list-group-item"><strong>Project Type :</strong> ${project.projectType}</li>
+        <li class="list-group-item"><strong>GitHub : </strong> ${project.link}</li>
       </ul>
       <a href="index.html" class="btn btn-primary">Back to Projects</a>
     </div>
