@@ -38,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
   const projects = {
     tasklinker: {
       title: "TaskLinker",
-      date: "October 2023",
       description:
         "A Symfony-based platform for task management and project tracking.",
       status: "Completed",
@@ -46,6 +45,61 @@ document.addEventListener("DOMContentLoaded", function () {
       projectType: "Full-stack",
       image: "assets/img/bg-callout.jpg",
       link: "https://github.com/SnezhanaPashovska/tasklinker",
+      photos: [
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+      ],
+    },
+    greengoodies: {
+      title: "Green Goodies",
+      description:
+        "A Symfony-based platform for task management and project tracking.",
+      status: "Completed",
+      techStack: "Symfony, PHP",
+      projectType: "Full-stack",
+      image: "assets/img/bg-callout.jpg",
+      link: "https://github.com/SnezhanaPashovska/GreenGoodies",
+      photos: [
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+      ],
+    },
+    ecogarden: {
+      title: "EcoGarden & co",
+      description:
+        "A Symfony-based platform for task management and project tracking.",
+      status: "Completed",
+      techStack: "API",
+      projectType: "Back-end",
+      image: "assets/img/bg-callout.jpg",
+      link: "https://github.com/SnezhanaPashovska/Eco_Garden",
+      photos: [
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+      ],
+    },
+
+    tomtroc: {
+      title: "Tom Troc",
+      description:
+        "A Symfony-based platform for task management and project tracking.",
+      status: "Completed",
+      techStack: "API",
+      projectType: "Back-end",
+      image: "assets/img/bg-callout.jpg",
+      link: "https://github.com/SnezhanaPashovska/tom-troc",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
