@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function () {
     tasklinker: {
       title: "TaskLinker",
       description:
-        "A Symfony-based platform for task management and project tracking.",
-      status: "Completed",
-      techStack: "Symfony, PHP",
-      projectType: "Full-stack",
+        "TaskLinker est une solution de gestion de projets développée avec Symfony, permettant aux employés de créer, suivre et gérer leurs tâches. Grâce à un contrôle d’accès basé sur les rôles, une authentification à deux facteurs avec Google Authenticator et une interface responsive, la plateforme assure une gestion sécurisée et efficace des projets.",
+      status: "Terminé",
+      techStack: "Symfony, PHP, PostgreSQL, Twig, Google Authenticator",
+      projectType: "Full-stack Web Application",
       image: "assets/img-project/TaskLinker-fotor-2025033014421.jpg",
       link: "https://github.com/SnezhanaPashovska/tasklinker",
       photos: [
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img-project/tl-connect.jpg",
+        "assets/img-project/tl-ga.jpg",
+        "assets/img-project/tl-projects.png",
+        "assets/img-project/tl-equipe.jpg",
+        "assets/img-project/tl-project.png",
+        "assets/img-project/tl-project-edit.png",
       ],
     },
     greengoodies: {
@@ -140,9 +140,9 @@ document.addEventListener("DOMContentLoaded", function () {
       <h1>${project.title}</h1>
       <p>${project.description}</p>
       <ul class="list-group mb-4">
-        <li class="list-group-item"><strong>Status : </strong> ${project.status}</li>
-        <li class="list-group-item"><strong>Tech Stack : </strong> ${project.techStack}</li>
-        <li class="list-group-item"><strong>Project Type :</strong> ${project.projectType}</li>
+        <li class="list-group-item"><strong>Statut : </strong> ${project.status}</li>
+        <li class="list-group-item"><strong>Stack technologique : </strong> ${project.techStack}</li>
+        <li class="list-group-item"><strong>Type de projet  :</strong> ${project.projectType}</li>
         <li class="list-group-item"><strong>GitHub : </strong> ${project.link}</li>
       </ul>
       <a href="index.html" class="btn btn-primary">Back to Projects</a>
@@ -156,7 +156,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     project.photos.forEach((photo) => {
       photoContainer.innerHTML += `
-        <div class="col-4">
+        <div class="col-4 images-detail">
           <img
             src="${photo}"
             alt="Additional Image"
