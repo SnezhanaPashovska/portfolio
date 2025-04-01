@@ -43,7 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
       status: "Completed",
       techStack: "Symfony, PHP",
       projectType: "Full-stack",
-      image: "assets/img/bg-callout.jpg",
+      image: "assets/img-project/TaskLinker-fotor-2025033014421.jpg",
       link: "https://github.com/SnezhanaPashovska/tasklinker",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
@@ -61,7 +61,7 @@ document.addEventListener("DOMContentLoaded", function () {
       status: "Completed",
       techStack: "Symfony, PHP",
       projectType: "Full-stack",
-      image: "assets/img/bg-callout.jpg",
+      image: "assets/img-project/green-goodies-edited-fotor-20250330144428.jpg",
       link: "https://github.com/SnezhanaPashovska/GreenGoodies",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
@@ -79,7 +79,7 @@ document.addEventListener("DOMContentLoaded", function () {
       status: "Completed",
       techStack: "API",
       projectType: "Back-end",
-      image: "assets/img/bg-callout.jpg",
+      image: "assets/img-project/ecogarden-co-fotor-20250330144450.jpg",
       link: "https://github.com/SnezhanaPashovska/Eco_Garden",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
       status: "Completed",
       techStack: "API",
       projectType: "Back-end",
-      image: "assets/img/bg-callout.jpg",
+      image: "assets/img-project/tomtroc-fotor-2025033014445.jpg",
       link: "https://github.com/SnezhanaPashovska/tom-troc",
       photos: [
         "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
@@ -138,7 +138,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     <div class="col-md-6">
       <h1>${project.title}</h1>
-      <p class="text-muted">Published on: ${project.date}</p>
       <p>${project.description}</p>
       <ul class="list-group mb-4">
         <li class="list-group-item"><strong>Status : </strong> ${project.status}</li>
