@@ -57,19 +57,19 @@ document.addEventListener("DOMContentLoaded", function () {
     greengoodies: {
       title: "Green Goodies",
       description:
-        "A Symfony-based platform for task management and project tracking.",
-      status: "Completed",
-      techStack: "Symfony, PHP",
+        "GreenGoodies est une boutique en ligne qui propose une sélection de produits bio et écoresponsables, tout en intégrant des solutions numériques modernes. Grâce à une interface intuitive, une gestion sécurisée des commandes et une API dédiée aux partenaires, la plateforme facilite l’accès à un mode de vie sain et responsable.",
+      status: "Terminé",
+      techStack: "Symfony 7, PHP, MySQL, Doctrine ORM, Twig Templates, CSS/SASS",
       projectType: "Full-stack",
       image: "assets/img-project/green-goodies-edited-fotor-20250330144428.jpg",
       link: "https://github.com/SnezhanaPashovska/GreenGoodies",
       photos: [
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
-        "assets/img/dariusz-sankowski-3OiYMgDKJ6k-unsplash.jpg",
+        "assets/img-project/bienvenue-gg.jpg",
+        "assets/img-project/gg-connexion.png",
+        "assets/img-project/savon-gg.png",
+        "assets/img-project/monpanier-gg.png",
+        "assets/img-project/moncompte-gg.png",
+        "assets/img-project/commande-gg.png",
       ],
     },
     ecogarden: {
@@ -145,7 +145,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="list-group-item"><strong>Type de projet  :</strong> ${project.projectType}</li>
         <li class="list-group-item"><strong>GitHub : </strong> ${project.link}</li>
       </ul>
-      <a href="index.html" class="btn btn-primary">Back to Projects</a>
+      <a href="projects.html" class="btn btn-primary">Back to Projects</a>
     </div>
   `;
 
