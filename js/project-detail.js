@@ -178,6 +178,53 @@ document.addEventListener("DOMContentLoaded", function () {
         "assets/img-project/edit-ef.png",
       ],
     },
+    artbox: {
+      title: "The Artbox",
+      description:
+        "Le projet consiste à transformer le site statique de la galerie contemporaine The ArtBox en un site administrable. Initialement, chaque œuvre était ajoutée manuellement dans le code HTML. Pour simplifier ce processus, j’ai mis en place une base de données MySQL permettant de stocker les œuvres, et j’ai développé un formulaire côté back-office pour créer de nouvelles fiches automatiquement. Le site a été partiellement refactorisé en PHP afin de mutualiser les éléments récurrents (header, footer, etc.) et générer dynamiquement les pages d’accueil et de détail. Ce projet a également été l’occasion d’utiliser Git et GitHub pour le suivi de version et la collaboration.",
+      status: "Terminé",
+      techStack: "PHP, HTML5, CSS3, MySQL, Git & GitHub",
+      projectType: "Dynamisation d’un site statique",
+      image: "assets/img-project/artbox.jpg",
+      link: "https://github.com/SnezhanaPashovska/the-artbox",
+      photos: [
+        "assets/img-project/accueil-ab.jpg",
+        "assets/img-project/add-p-artbox.jpg",
+        "assets/img-project/photo-detail-ab.jpg",
+      ],
+    },
+    ohmyfood: {
+      title: "ohmyfood",
+      description:
+        "Le projet OhMyFood consiste à créer une plateforme web responsive permettant aux clients de consulter les menus de restaurants partenaires et de composer leur repas à l’avance pour gagner du temps une fois sur place. L’approche “mobile first” a été privilégiée, avec un soin particulier apporté à l’animation des interactions pour offrir une expérience utilisateur fluide et moderne. Le site présente quatre restaurants avec leurs menus respectifs, en suivant des maquettes précises fournies sur Figma. Le développement inclut également l’optimisation pour tablette et desktop.",
+      status: "Terminé",
+      techStack:
+        "HTML5, CSS3, Méthodologie mobile first, Figma (maquettes et prototypes)",
+      projectType: "Intégration web responsive",
+      image: "assets/img-project/ohmyfood.jpg",
+      link: "https://github.com/SnezhanaPashovska/Oh-my-food",
+      photos: [
+        "assets/img-project/accueil-1_omf.jpg",
+        "assets/img-project/accueil-2-omf.jpg",
+        "assets/img-project/menu-omf.jpg",
+      ],
+    },
+    piiquante: {
+      title: "Piiquante",
+      description:
+        "Le projet consiste à développer l’API back-end pour la nouvelle application web de Piiquante, actuellement une « galerie de sauces ». Les utilisateurs peuvent télécharger leurs sauces piquantes préférées et liker ou disliker celles partagées par d’autres. Le front-end a été développé avec Angular et précompilé, mais Piiquante a besoin d’un développeur back-end pour construire l’API.La sécurité est une priorité : l’API doit respecter les bonnes pratiques de codage sécurisées, notamment pour protéger les mots de passe des utilisateurs. Cette première version pourrait évoluer ultérieurement vers une boutique en ligne, mais l’objectif immédiat est de lancer la galerie.",
+      status: "Terminé",
+      techStack:
+        "HTML5, CSS3, JavaScript, Node.js, Express",
+      projectType: "API web sécurisée",
+      image: "assets/img-project/piiquante.jpg",
+      link: "https://github.com/SnezhanaPashovska/Piiquante",
+      photos: [
+        "assets/img-project/accueil-1_omf.jpg",
+        "assets/img-project/accueil-2-omf.jpg",
+        "assets/img-project/menu-omf.jpg",
+      ],
+    },
   };
 
   // Get the project ID from URL
