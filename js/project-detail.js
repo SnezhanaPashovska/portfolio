@@ -220,9 +220,43 @@ document.addEventListener("DOMContentLoaded", function () {
       image: "assets/img-project/piiquante.jpg",
       link: "https://github.com/SnezhanaPashovska/Piiquante",
       photos: [
-        "assets/img-project/accueil-1_omf.jpg",
-        "assets/img-project/accueil-2-omf.jpg",
-        "assets/img-project/menu-omf.jpg",
+        "assets/img-project/ht-1-fotor-2025092310236.jpg",
+        "assets/img-project/ht-2-fotor-20250923103151.jpg",
+        "assets/img-project/ht-3-fotor-2025092310334.jpg",
+      ],
+    },
+    kanap: {
+      title: "Kanap",
+      description:
+        "Le projet Kanap consiste à créer une application e-commerce pour la vente de canapés. Les utilisateurs peuvent parcourir les différents modèles de canapés, les personnaliser et les ajouter à leur panier. L'application utilise une API REST pour gérer les produits et les commandes. Le design est moderne et responsive, offrant une expérience utilisateur agréable sur tous les appareils.",
+      status: "Terminé",
+      techStack:
+        "HTML5, CSS3, JavaScript, Node.js, Express",
+      projectType: "Application e-commerce",
+      image: "assets/img-project/kanap.jpg",
+      link: "https://github.com/SnezhanaPashovska/Kanap",
+      photos: [
+        "assets/img-project/kanap-1-fotor-2025092311016.jpg",
+        "assets/img-project/kanap-2-fotor-2025092311041.jpg",
+        "assets/img-project/kanap-3-fotor-202509231115.jpg",
+        "assets/img-project/kanap-4-fotor-2025092311415.jpg",
+      ],
+    },
+    groupomania: {
+      title: "Groupomania",
+      description:
+        "Le projet Groupomania consiste à créer un réseau social d'entreprise pour faciliter la communication et la collaboration entre les employés. Les utilisateurs peuvent créer des comptes, publier des messages, commenter et liker les publications des autres. L'application utilise une architecture RESTful et est développée avec Node.js et Express.",
+      status: "Terminé",
+      techStack:
+        "HTML5, CSS3, JavaScript, Node.js, Express",
+      projectType: "Réseau social d'entreprise",
+      image: "assets/img-project/groupomania.jpg",
+      link: "https://github.com/SnezhanaPashovska/Groupomania",
+      photos: [
+        "assets/img-project/gr-1-fotor-2025092585623.png",
+        "assets/img-project/gpm-1-fotor-2025092585658.png",
+        "assets/img-project/gpm-2-fotor-2025092585719.png",
+        "assets/img-project/gpm-3-fotor-2025092585744.png",
       ],
     },
   };
@@ -232,8 +266,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const projectId = urlParams.get("id");
   if (!projectId || !projects[projectId]) {
     document.getElementById("project-container").innerHTML = `
-      <h2>Project not found!</h2>
-      <a href="index.html" class="btn btn-secondary">Back to Projects</a>
+      <h2>Projet introuvable !</h2>
+      <a href="index.html" class="btn btn-secondary">Retour aux projets</a>
     `;
     return;
   }
@@ -261,7 +295,7 @@ document.addEventListener("DOMContentLoaded", function () {
         <li class="list-group-item"><strong>Type de projet  :</strong> ${project.projectType}</li>
         <li class="list-group-item"><strong>GitHub : </strong> ${project.link}</li>
       </ul>
-      <a href="projects.html" class="btn btn-primary">Back to Projects</a>
+      <a href="projects.html" class="btn btn-primary">Retour aux projets</a>
     </div>
   `;
 
