@@ -113,7 +113,7 @@
   --bs-body-font-size: 1rem;
   --bs-body-font-weight: 400;
   --bs-body-line-height: 1.5;
-  --bs-body-color: #212529;
+  --bs-body-color: #4A4A4A;
   --bs-body-bg: #fff;
   --bs-border-width: 1px;
   --bs-border-style: solid;
@@ -11434,7 +11434,7 @@ footer.footer .social-link:hover {
       rgba(255, 255, 255, 0.1) 0%,
       rgba(255, 255, 255, 0.1) 100%
     ),
-    url("../assets/img/Untitled1.png");
+    url("../assets/img/Untitled1.1hd.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11542,20 +11542,13 @@ footer.footer .social-link:hover {
 }
 
 .page-header {
-  background: linear-gradient(
-    to right,
-    rgba(154, 105, 120, 1),
-    rgba(195, 181, 189, 1),
-    rgba(195, 181, 189, 1)
-    
-  );
-
-  color: white;
+  background: linear-gradient(135deg, #F3E5F5, #FFD8CC);
+  color: #6B5B7B;
   padding: 100px 0;
 }
 
 .breadcrumb a {
-  color: white;
+  color: #6B5B7B;
   text-decoration: none;
 }
 
