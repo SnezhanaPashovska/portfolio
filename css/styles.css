@@ -42,18 +42,61 @@
   --bs-danger: #dc3545;
   --bs-light: #f8f9fa;
   --bs-dark: #212529;
-  --bs-primary-rgb:154, 105, 120; /* Muted Rose Pink):*/
-  --bs-secondary-rgb: 253, 247, 242; /* Soft Blush Pink */
-  --bs-success-rgb: 25, 135, 84;
-  --bs-info-rgb:195, 181, 189; /* Dusty Lavender */
-  --bs-warning-rgb: 74, 74, 74; /* Elegant Charcoal Gray */
-  --bs-danger-rgb: 220, 53, 69;
-  --bs-light-rgb: 253, 247, 242;
-  --bs-dark-rgb: 33, 37, 41;
+
+
+   /* 🎨 Background Colors */
+  --bs-body-bg: #FFF8F6;
+  --bs-body-bg-rgb: 255, 248, 246;
+
+  --bs-light: #F3E5F5;
+  --bs-light-rgb: 243, 229, 245;
+
+  --bs-secondary-bg: #DCC6E0;
+  --bs-secondary-bg-rgb: 220, 198, 224;
+
+  --bs-border-color: #F4F1EE;
+  --bs-border-color-rgb: 244, 241, 238;
+
+  /* 🌸 Accent Colors */
+  --bs-primary: #DCC6E0;
+  --bs-primary-rgb: 220, 198, 224;
+
+  --bs-info: #FFD8CC;
+  --bs-info-rgb: 255, 216, 204;
+
+  --bs-success: #E3F6E3;
+  --bs-success-rgb: 227, 246, 227;
+
+ --bs-warning: #CFA3C7;
+--bs-warning-rgb: 207, 163, 199;
+
+  --bs-danger: #B0A8B9;
+  --bs-danger-rgb: 176, 168, 185;
+
+  /* 📝 Text Colors */
+  --bs-body-color: #4A4A4A;
+  --bs-body-color-rgb: 74, 74, 74;
+
+  --bs-secondary-color: #6B5B7B;
+  --bs-secondary-color-rgb: 107, 91, 123;
+
+  --bs-link-color: #6B5B7B;
+  --bs-link-color-rgb: 107, 91, 123;
+
+  --bs-link-hover-color: #6B5B7B;
+  --bs-link-hover-color-rgb: 107, 91, 123;
+
+  --bs-dark: #6B5B7B; 
+  --bs-dark-rgb: 107, 91, 123;
+
+  /* ⚪ Neutral */
+  --bs-white: #FFFFFF;
   --bs-white-rgb: 255, 255, 255;
+
+  --bs-black: #000000;
   --bs-black-rgb: 0, 0, 0;
-  --bs-body-color-rgb: 33, 37, 41;
-  --bs-body-bg-rgb: 255, 255, 255;
+
+
   --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto,
     "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -86,7 +129,6 @@
   --bs-link-hover-color: #17667f;
   --bs-code-color: #d63384;
   --bs-highlight-bg: #fbf1cd;
-  
 }
 
 *,
@@ -2044,7 +2086,7 @@ progress {
 .form-text {
   margin-top: 0.25rem;
   font-size: 0.875em;
-  color: #6c757d;
+  color: #4A4A4A;
 }
 
 .form-control {
@@ -2976,18 +3018,18 @@ fieldset:disabled .btn {
 
 .btn-primary {
   --bs-btn-color: #fff;
-  --bs-btn-bg: #936B82;
-  --bs-btn-border-color: #936B82;
+  --bs-btn-bg: #B48FB8; /* Soft lavender */
+  --bs-btn-border-color: #B48FB8;;
   --bs-btn-hover-color: #fff;
-  --bs-btn-hover-bg: #9C5A75;
-  --bs-btn-hover-border-color: #9C5A75;
+  --bs-btn-hover-bg: #9A6FA0; /* Muted mauve */
+  --bs-btn-hover-border-color: #9A6FA0;
   /* Focus State */
   --bs-btn-focus-shadow-rgb: 255, 175, 163; /* Coral glow */
 
   /* Active State */
   --bs-btn-active-color: #fff;
-  --bs-btn-active-bg: #fdb62c; /* Warm gold */
-  --bs-btn-active-border-color: #e6a62a; /* Slightly darker gold */
+  --bs-btn-active-bg: #E7A59E; /* Muted peach */
+  --bs-btn-active-border-color: #E7A59E; /* Muted peach */
   --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
 
   /* Disabled State */
@@ -2998,13 +3040,13 @@ fieldset:disabled .btn {
 
 .btn-secondary {
   --bs-btn-color: #fff; /* White text for better contrast */
-  --bs-btn-bg: #7A5068 ; /* Modern muted purple */
-  --bs-btn-border-color: #7A5068; /* Border matches background */
+  --bs-btn-bg: #B46F7F; /* Muted rose */
+  --bs-btn-border-color: #B46F7F; /* Border matches background */
 
   /* Hover State */
   --bs-btn-hover-color: #fff; /* White text */
-  --bs-btn-hover-bg: rgb(154, 105, 120); /* Warm coral */
-  --bs-btn-hover-border-color:rgb(154, 105, 120);
+  --bs-btn-hover-bg: rgb(158, 88, 105); /* Muted mauve */
+  --bs-btn-hover-border-color:rgb(158, 88, 105);
 
   /* Focus State */
   --bs-btn-focus-shadow-rgb: 253, 218, 236; /* Soft pink glow */
@@ -11189,7 +11231,7 @@ body,
 html {
   width: 100%;
   height: 100%;
-  background-color: #f7f1e8;
+  background-color: #FFF8F6;
 }
 
 .content-section {
@@ -11208,7 +11250,7 @@ html {
 }
 
 .text-faded {
-  color: rgba(255, 255, 255, 0.7);
+  color: rgba(74, 63, 87, 0.7);
 }
 
 .scroll-to-top {
@@ -11392,7 +11434,7 @@ footer.footer .social-link:hover {
       rgba(255, 255, 255, 0.1) 0%,
       rgba(255, 255, 255, 0.1) 100%
     ),
-    url("../assets/img/f9e8d36c-92bf-42b5-a477-364709574fed.jpg");
+    url("../assets/img/Untitled1.png");
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -11490,7 +11532,7 @@ footer.footer .social-link:hover {
 
 .service-icon {
   background-color: #fff;
-  color: #1d809f;
+  color: #DCC6E0;
   height: 7rem;
   width: 7rem;
   display: block;
@@ -11536,5 +11578,5 @@ footer.footer .social-link:hover {
 }
 
 #portfolio, #all-projects {
-  background-color: #f7f1e8;
+  background-color: #FFF8F6;
 }
